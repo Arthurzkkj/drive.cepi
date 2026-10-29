@@ -1,0 +1,113 @@
+Cod 1*
+
+using System;
+
+class Program
+{
+    static void Main ()
+    {
+        Console.WriteLine ("Informe sua idade");
+        int idade = int.Parse (Console.ReadLine());
+        
+        if (idade <= 11) {
+            Console.WriteLine ("Criança");
+        } else if (idade <= 17) {
+            Console.WriteLine ("Adolescente");
+        } else {
+            Console.WriteLine ("Adulto");
+        }
+    }
+}
+
+Cod 2*
+
+using System;
+
+class Program
+{
+    static void Main ()
+    {
+        Console.WriteLine ("Informe um numero");
+        int numero = int.Parse (Console.ReadLine());
+        
+        if (numero > 0) {
+            Console.WriteLine ("Positivo");
+        } else if (numero < 0) {
+            Console.WriteLine ("Negativo");
+        } else {
+            Console.WriteLine ("Zero");
+        }
+    }
+}
+
+Cod 3*
+
+using System;
+
+class Program
+{
+    static void Main ()
+    {
+        Console.WriteLine ("Informe sua nota:");
+        double nota = double.Parse (Console.ReadLine());
+        
+        if (nota >= 7){
+            Console.WriteLine ("Aprovado");
+        } else if (nota >= 5) {
+            Console.WriteLine ("Recuperação");
+        } else {
+            Console.WriteLine ("Reprovado");
+        }
+    }
+}
+        
+Cod 4*
+
+using System;
+
+class Program
+{
+    static void Main ()
+    {
+        Console.WriteLine ("Informe um numero:");
+        int numero = int.Parse (Console.ReadLine());
+        
+        if (numero % 2 == 0) {
+            Console.WriteLine ("Par");
+        } else {
+            Console.WriteLine ("Impar");
+        }
+    }
+}
+
+Cod 5*
+
+using System;
+
+class Program
+{
+    static void Main ()
+    {
+        Console.WriteLine ("1. Mostrar saldo");
+        Console.WriteLine ("2. fazer deposito");
+        Console.WriteLine ("3. Sair");
+        Console.WriteLine ("Escolher uma opção");
+        
+        int opcao = int.Parse (Console.ReadLine());
+        
+        switch (opcao) {
+            case 1 : Console.WriteLine ("Voce consultou saldo");
+            break;
+             case 2 : Console.WriteLine ("Voce fez deposito");
+            break;
+             case 3 : Console.WriteLine ("Voce saiu");
+            break;
+            default :
+            Console.WriteLine ("opção invalida");
+            break;
+        }
+    }
+}
+           
+
+
